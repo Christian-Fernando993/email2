@@ -1,0 +1,165 @@
+.s-hero {
+    .container {
+        padding-top: 4.7rem;
+        padding-bottom: 4.7rem;
+        background-color: #F6F8FA;
+        .logo {
+            max-width: 20.4rem;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+        }
+        .title {
+            h1 {
+                color: #000;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+                font-size: 42px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 65px;
+                margin-bottom: 1.2rem;
+            }
+
+            p {
+                color: #000;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 23px;
+                margin-bottom: 3.2rem;
+            }
+        }
+
+        button {
+            width: 145px;
+            height: 48px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #5a78ff;
+            ;
+            color: #fff;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .container {
+            .title {
+                h1{
+                    font-size: 34px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+.s-hero-table {
+    .container {
+        padding-top: 4.7rem;
+        padding-bottom: 4.7rem;
+        .sub-menu {
+            h2 {
+                color: #000;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+                font-size: 3.2rem;
+                font-style: normal;
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                color: #000;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 23px;
+                margin-bottom: 3.2rem;
+            }
+        }
+        .table {
+            max-width: 100%;
+            background-color: transparent;
+            border-collapse: transparent;
+            border-spacing: 0;
+            font-family: 'Inter', sans-serif;
+            width: 100%;
+            margin-bottom: 2rem;
+            th,
+            td {
+                padding: 2rem 3rem;
+                line-height: 2rem;
+                text-align: center;
+                vertical-align: middle;
+                border: #d0d5d8 solid 1px;
+            }
+
+            thead {
+                tr {
+                    th {
+                        font-weight: 400;
+                        background-color: #5a78ff;
+                        color: #fff;
+                        font-size: 1.8rem;
+                        text-align: center;
+                    }
+                }
+            }
+
+            tbody {
+                background-color: #f8f8f8;
+                tr {
+                    td {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+    // @media (max-width: 500px){
+    //     .container{
+    //       .table-responsive{
+    //         th,
+    //         td{
+    //             padding: 1.5rem;
+    //             line-height: normal;
+    //         }
+    //       }  
+    //     }
+    // }
+    @media (max-width: 500px) {
+        .container{
+            //Esta parte do código cria um scroll lateral.
+            .scroll-lateral{
+                overflow: auto;
+                white-space: nowrap;
+                .table-responsive{
+                    td,th{
+                        padding: 1.5rem 1.5rem;
+                    }
+                    thead{
+                        tr{
+                            th{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
